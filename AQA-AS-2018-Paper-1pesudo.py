@@ -9,5 +9,5 @@ while number < 1 or number > 10:
 c = 1
 for k in range(0,number-1):
     print(c)
-c = (c*(number-1-k))//(k+1)
+    c = (c*(number-1-k))//(k+1)
         
