@@ -1,13 +1,15 @@
+import re
 def sendsignals():
     dict = {
         ".":"=",
         "-":"===",
         " ":"  ",
     }
-    print("Morse code opitons: space, =, ===")
+    print("Morse code opitons: space, ., -")
     User_input_morse = input("Enter Morse code")
-    for i in range(len(User_input_morse)):
-        dict.cmp(User_input_morse)
+    for i in dict.keys():
+        User_input_morse = User_input_morse.replace(i,dict[i])
+        print(User_input_morse)
 
 
 sendsignals()
