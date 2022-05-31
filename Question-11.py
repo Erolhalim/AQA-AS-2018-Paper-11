@@ -1,8 +1,5 @@
 
 
-from pydoc import plain
-
-
 def ReportError(plaintext):
     if plaintext.replace(' ','').isupper() == False:
         print("All character have to be uppercase\n")
