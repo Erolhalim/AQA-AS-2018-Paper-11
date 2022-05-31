@@ -4,11 +4,13 @@ from pydoc import plain
 
 
 def ReportError(plaintext):
-    if plaintext.replace(' ','').isupper() == True:
+    if plaintext.replace(' ','').isupper() == False:
         print("All character have to be uppercase\n")
     else:
         print("All character have to be in the alhpabet\n")
-    SendMorseCose()
+    MorseCode = ""
+    
+    
 
     
 
@@ -29,7 +31,7 @@ def SendMorseCose():
           else:
               Index = ord(plaintextletter) - ord('A') + 1
     else:
-        ReportError()
+        ReportError(plaintext)
 
 
 
