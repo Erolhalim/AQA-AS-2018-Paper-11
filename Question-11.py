@@ -1,13 +1,21 @@
 
+<<<<<<< HEAD
 def ReportError(MorseCode): #hello
 
+=======
+>>>>>>> df722dff24dc79f6be5d66bef3e8ac716af9d01b
 
-
-
-
-def SendMorseCose(MorseCode):
+def ReportError(plaintext):
+    if plaintext.replace(' ','').isupper() == False:
+        print("All character have to be uppercase\n")
+    else:
+        print("All character have to be in the alhpabet\n")
+    MorseCode = ""
+    
+    
+def SendMorseCose():
     plaintext = input("Enter your message (uppercase letters and spaces only)")
-    if plaintext.isupper == True:
+    if plaintext.replace(' ','').isupper() == True and plaintext.replace(' ','').isalpha() == True :
       plaintextlength = len(plaintext)
       MorseCode = ""
       for i in range(plaintextlength):
@@ -17,10 +25,10 @@ def SendMorseCose(MorseCode):
           else:
               Index = ord(plaintextletter) - ord('A') + 1
     else:
-        ReportError(MorseCode)
+        ReportError(plaintext)
+
 
 
 
 SendMorseCose()
 
-isalpha()
