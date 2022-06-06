@@ -1,15 +1,11 @@
-from typing import Counter
-
-
 def DisplayMenu():
-  print()
   print("Main Menu")
   print("=========")
   print("R - Receive Morse code")
   print("S - Send Morse code")
   print("A - Display")
   print("X - Exit program")
-  print()
+  
 
   
 def SendReceiveMessages():
@@ -47,14 +43,6 @@ def OutputAlphabetWithTheCode(Letter,MorseCode):
         counter = counter + 1 
         print(Letter[counter],MorseCode[counter],end = '')
 
-
-def DisplayMenu():
-  print("Main Menu")
-  print("=========")
-  print("R - Receive Morse code")
-  print("S - Send Morse code")
-  print("X - Exit program")
-  print("A - Exit program")
 
 
 def GetMenuOption():
